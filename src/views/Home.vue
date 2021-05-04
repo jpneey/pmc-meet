@@ -1,9 +1,10 @@
 <template>
   <div id="home">
-    <h1 class="h2 fw-bold position-relative mb-0 ps-5"><img src="../assets/pmc-highres.png" class="pmcg" height="45" alt="teams-logo" /> &nbsp; Progressive Medical Corporation</h1>
-    <p class="text-secondary ps-5"> &nbsp; <b>{{greet}}!</b> Select an app and start you video conference easily.</p>
+    <h1 class="h2 fw-bold text-white position-relative mb-0 ps-0 arial">Progressive Medical Corporation</h1>
+    <p class="text-white ps-0 mb-4"><b>{{greet}}!</b> Select an app and start you video conference easily.</p>
     <Meetings />
   </div>
+  <img src="../assets/office.png" class="bg" alt="google-logo" />
   <Modals />
 </template>
 

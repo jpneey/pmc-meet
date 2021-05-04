@@ -1,54 +1,49 @@
 <template>
-  <swiper
-      :slides-per-view="'auto'"
-      :space-between="20"
-      :centereSlides="true"
-      class="meeting"
-    >
+  <div class="meeting row row-cols-3">
     
-    <swiper-slide>
-      <div class="meeting-card google-meet" data-bs-toggle="modal" data-bs-target="#google-meet-modal">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 google-meet" data-bs-toggle="modal" data-bs-target="#google-meet-modal">
         <img src="../assets/google.png" alt="google-logo" />
         <p class="text-end text-white">Open<br><span>Google Meet</span></p>
       </div>
-    </swiper-slide>
+    </div>
 
-    <swiper-slide>
-      <div class="meeting-card zoom-meeting" @click="loadExternalApp('zoom', path_to_zoom)">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 zoom-meeting" @click="loadExternalApp('zoom', path_to_zoom)">
         <img src="../assets/zoom.png" alt="zoom-logo" />
         <p class="text-end text-white">Launch<br><span>Zoom Meeting App</span></p>
       </div>
-    </swiper-slide>
+    </div>
 
-    <swiper-slide>
-      <div class="meeting-card goto-meeting" @click="loadExternalApp('goto', path_to_goto)">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 goto-meeting" @click="loadExternalApp('goto', path_to_goto)">
         <img src="../assets/goto.png" alt="goto-logo" />
         <p class="text-end text-white">Launch<br><span>GoTo Meeting App</span></p>
       </div>
-    </swiper-slide>
+    </div>
 
-    <swiper-slide>
-      <div class="meeting-card microsoft-teams" @click="loadExternalApp('team', path_to_team)">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 microsoft-teams" @click="loadExternalApp('team', path_to_team)">
         <img src="../assets/teams.png" alt="teams-logo" />
-        <p class="text-end text-white">Launch<br><span>Microsoft Teans App</span></p>
+        <p class="text-end text-white">Launch<br><span>Microsoft Teams App</span></p>
       </div>
-    </swiper-slide>
+    </div>
     
-    <swiper-slide>
-      <div class="meeting-card skype" @click="loadExternalApp('skype', path_to_skype)">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 skype" @click="loadExternalApp('skype', path_to_skype)">
         <img src="../assets/skype.png" alt="teams-logo" />
         <p class="text-end text-white">Launch<br><span>Skype App</span></p>
       </div>
-    </swiper-slide>
+    </div>
 
-    <swiper-slide>
-      <div class="meeting-card webex" @click="loadExternalApp('webex', path_to_webex)">
+    <div class="col">
+      <div class="meeting-card position-relative mb-4 webex" @click="loadExternalApp('webex', path_to_webex)">
         <img src="../assets/webex.png" alt="teams-logo" />
         <p class="text-end text-white">Launch<br><span>Webex App</span></p>
       </div>
-    </swiper-slide>
+    </div>
 
-  </swiper>
+  </div>
 </template>
 
 <script>
