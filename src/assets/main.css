@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
-    background: #111;
+    background: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -99,7 +99,6 @@ body {
     cursor: pointer;
     margin: 0 10px !important;
     font-size: 24px;
-    color: #fff;
 }
 
 ::selection {
