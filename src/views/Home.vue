@@ -1,7 +1,12 @@
 <template>
   <div id="home">
-    <h1 class="h2 fw-bold position-relative mb-0 ps-5"><img src="../assets/pmcg-highres.png" class="pmcg" height="45" alt="teams-logo" /> &nbsp; PMC Group of Companies</h1>
-    <p class="text-secondary ps-5"> &nbsp; <b>{{greet}}!</b> Select an app and start you video conference easily.</p>
+    <img src="../assets/sky.jpg" alt="ass" class="over-image" />
+    <div id="app-label">
+      <div>
+        <h1 class="h2 fw-bold text-white position-relative mb-0 ps-5"><img src="../assets/pmcg-highres.png" class="pmcg" height="45" alt="teams-logo" /> &nbsp; PMC Group of Companies</h1>
+        <p class="text-white ps-5"> &nbsp; <b>{{greet}}!</b> Select an app and start you video conference easily.</p>
+      </div>
+    </div>
     <Meetings />
   </div>
   <Modals />
