@@ -1,5 +1,6 @@
 <template>
   <div id="electron-control">
+    <img src="./assets/inmed_logo.png" />
     <i class="material-icons mx-3" data-bs-toggle="modal" data-bs-target="#reboot-modal">refresh</i>
     <i class="material-icons mx-3" data-bs-toggle="modal" data-bs-target="#shut-down-modal">power_settings_new</i>
     <i class="material-icons mx-3" data-bs-toggle="modal" data-bs-target="#fine-tune-modal">tune</i>

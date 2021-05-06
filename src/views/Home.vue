@@ -1,7 +1,12 @@
 <template>
+  <img src="../assets/bg.jpg" class="bg" />
   <div id="home">
-    <h1 class="h2 fw-bold position-relative mb-0 ps-5"><img src="../assets/ic-highres.png" class="pmcg" height="45" alt="teams-logo" /> &nbsp; Inmed Corporation</h1>
-    <p class="text-secondary ps-5"> &nbsp; <b>{{greet}}!</b> Select an app and start you video conference easily.</p>
+    <h1 class="text-white h2 fw-bold position-relative mb-0 text-center ts-s"> &nbsp; <b>Welcome !</b> </h1>
+    <p class="text-white mb-5 text-center ts-s"> &nbsp; Select an app and start you video conference easily.</p>
+  </div>
+
+  <div id="platform"></div>
+  <div id="apps">  
     <Meetings />
   </div>
   <Modals />

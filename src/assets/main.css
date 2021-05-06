@@ -5,33 +5,48 @@ body {
     background: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    overflow: hidden;
 }
 
+#apps,
 #home {
     position: absolute;
     display: block;
     margin: auto;
-    padding: 100px;
+    padding: 0;
     max-width: 1000px;
     width: 100%;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#apps {
+    bottom: 20%;
+    transform: translateX(-50%);
+    top: auto;
 }
 
 .meeting-card {
     display: block;
-    height: 280px;
+    /* height: 280px; */
     background: #f5f5f5;
     border-radius: .5rem;
     transition: transform 0.2s;
     cursor: pointer;
 }
 
-.meeting .swiper-slide {
+.meeting-card::before {
+    content:  " ";
+    display: block;
+    padding-bottom: 110%;
+}
+
+/* .meeting .swiper-slide {
     width: 200px !important;
     max-width: 200px !important;
-}
+} */
 
 .meeting-card:hover {
     transform: scale(0.95);
@@ -40,7 +55,7 @@ body {
 
 .meeting-card img {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -48,30 +63,43 @@ body {
 
 .meeting-card p {
     position: absolute;
-    bottom: 25px;
-    right: 25px;
+    bottom: -15px;
+    left: 0;
     margin: 0;
+    background: #404040;
+    width: 100%;
+    text-align: center !important;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+    padding: 6px;
+    font-size: 13px;
+    border-bottom-left-radius: 4px;
 }
 
-.skype,
 .zoom-meeting {
     background: rgb(85,186,252);
     background: linear-gradient(140deg, rgb(110, 197, 255) 0%, rgba(58,147,252,1) 35%, rgba(36,119,251,1) 100%);
 }
+.skype {
+    background: #00aff1;
+}
+
+.zoom-meeting {
+    background: #4a8cff;
+}
 
 .webex {
-    background: #01bceb;
-    background: linear-gradient(140deg, #01bceb 0%, #6ebe4a 35%, #005072 100%);
+    background: #6ebe4a;
 }
 
 .google-meet {
     background: rgb(17,145,132);
-    background: linear-gradient(140deg, rgb(20, 173, 158) 0%, rgba(15,144,131,1) 35%, rgb(5, 107, 97) 100%);
+    /* background: linear-gradient(140deg, rgb(20, 173, 158) 0%, rgba(15,144,131,1) 35%, rgb(5, 107, 97) 100%); */
 }
 
 .goto-meeting {
-    background: rgb(231,186,29);
-    background: linear-gradient(140deg, rgba(231,186,29,1) 0%, rgba(216,120,43,1) 35%, rgba(199,82,38,1) 100%);
+    background: #f68d2e;
+    /* background: linear-gradient(140deg, rgba(231,186,29,1) 0%, rgba(216,120,43,1) 35%, rgba(199,82,38,1) 100%); */
 }
 
 .microsoft-teams {
@@ -102,7 +130,15 @@ body {
     vertical-align: middle;
     cursor: pointer;
     margin: 0 10px !important;
-    font-size: 35px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#electron-control img {
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    width: 200px;
 }
 
 ::selection {
@@ -124,4 +160,38 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+}
+
+.swiper-container {
+    overflow: visible;
+}
+
+#platform {
+    width: 100%;
+    height: 30%;
+    background: #ff6d2e;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 1;
+}
+
+#electron-control *,
+.ts-s {
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.5);
+}
+
+h1.ts-s {
+    font-size: 32px;
+}
+
+p.ts-s {
+    font-size: 22px;    
 }
