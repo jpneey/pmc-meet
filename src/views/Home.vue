@@ -1,10 +1,11 @@
 <template>
   <div id="home">
-    <img src="../assets/ppi-banner.jpg" alt="ass" class="over-image" />
+    <div class="ppi-frag"><div v-for="i in 9" :key="i"></div></div>
+    <div class="blob"></div>
     <div id="app-label">
-      <div>
-        <h1 class="h2 fw-bold position-relative mb-0 ps-5"><img src="../assets/ppi-highres.png" class="pmcg" height="45" alt="teams-logo" /> &nbsp; Panamed Philippines Inc.</h1>
-        <p class="text-secondary ps-5"> &nbsp; <b>{{greet}}!</b> Select an app and start you video conference easily.</p>
+      <div class="pt-4">
+        <h1 class="h2 fw-bold text-white position-relative mb-3 h-ex"><img src="../assets/ppi-logo.png" height="50" alt="teams-logo" /></h1>
+        <p class="text-secondary text-white exceed position relative"><b>{{greet}}!</b> Select an app from the selections below and start you video conference easily.</p>
       </div>
     </div>
     <Meetings />
